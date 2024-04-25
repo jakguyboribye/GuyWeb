@@ -51,7 +51,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          {/* <Image borderRadius='full' src='https://www.mashed.com/img/gallery/the-kermit-lipton-tea-meme-explained/l-intro-1634237597.jpg' boxSize='30px'></Image> */}
+          <Image borderRadius='10' src='https://www.mashed.com/img/gallery/the-kermit-lipton-tea-meme-explained/l-intro-1634237597.jpg' boxSize='30px' className='mr-20'></Image>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
@@ -67,12 +67,12 @@ export default function WithSubnavigation() {
 }
 
 const DesktopNav = () => {
-  const linkColor = useColorModeValue('white', 'gray.800')
-  const linkHoverColor = useColorModeValue('gray.400', 'white')
+  const linkColor = useColorModeValue('white', 'gray.500')
+  const linkHoverColor = useColorModeValue('gray.500', 'white')
   const popoverContentBgColor = useColorModeValue('black', 'gray.800')
 
   return (
-    <Stack direction={'row'} spacing={20}>
+    <Stack direction={'row'} spacing={28}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
@@ -123,7 +123,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
       display={'block'}
       p={2}
       rounded={'md'}
-      _hover={{ bg: useColorModeValue('pink.50', 'gray.900') }}>
+      _hover={{ bg: useColorModeValue('white', 'gray.900') }}>
       <Stack direction={'row'} align={'center'}>
         <Box>
           <Text
@@ -151,7 +151,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 
 const MobileNav = () => {
   return (
-    <Stack bg={useColorModeValue('white', 'gray.800')} p={4} display={{ md: 'none' }}>
+    <Stack bg={useColorModeValue('black', 'gray.800')} p={4} display={{ md: 'none' }}>
       {NAV_ITEMS.map((navItem) => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -163,7 +163,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Stack spacing={8} onClick={children && onToggle}>
+    <Stack spacing={2} onClick={children && onToggle}>
       <Box
         py={2}
         as="a"
@@ -173,7 +173,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         _hover={{
           textDecoration: 'none',
         }}>
-        <Text fontWeight={600} color={useColorModeValue('gray.600', 'gray.200')}>
+        <Text fontWeight={600} color={useColorModeValue('white', 'white')}>
           {label}
         </Text>
         {children && (
@@ -193,11 +193,11 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           pl={4}
           borderLeft={1}
           borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.700')}
+          borderColor={useColorModeValue('white', 'white')}
           align={'start'}>
           {children &&
             children.map((child) => (
-              <Box as="a" key={child.label} py={2} href={child.href}>
+              <Box as="a" key={child.label} py={2} href={child.href} color = {useColorModeValue('white', 'gray.500')}>
                 {child.label}
               </Box>
             ))}
@@ -216,41 +216,50 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Inspiration',
-    children: [
-      {
-        label: 'Explore Design Work',
-        subLabel: 'Trending Design to inspire you',
-        href: '#',
-      },
-      {
-        label: 'New & Noteworthy',
-        subLabel: 'Up-and-coming Designers',
-        href: '#',
-      },
-    ],
-  },
-  {
-    label: 'Find Work',
-    children: [
-      {
-        label: 'Job Board',
-        subLabel: 'Find your dream design job',
-        href: '#',
-      },
-      {
-        label: 'Freelance Projects',
-        subLabel: 'An exclusive list for contract work',
-        href: '#',
-      },
-    ],
-  },
-  {
-    label: 'Learn Design',
+    label: 'Home',
     href: '#',
   },
   {
-    label: 'Hire Designers',
+    label: 'About me',
+    children: [
+      {
+        label: 'Skills',
+        subLabel: 'Skills and Experiences I have gathered so far',
+        href: '#',
+      },
+      {
+        label: 'Projects',
+        subLabel: 'Notable Projects throughout my Developer journey',
+        href: '#',
+      }],
+  },
+  {
+    label: 'My Hobbies',
+    children: [
+      {
+        label: 'My Music Collection',
+        subLabel: 'All my Favourite Music',
+        href: '#',
+      },
+      {
+        label: 'Movie Reviews',
+        subLabel: 'Reviews of Movies/Series I have recently watched',
+        href: '#',
+      },
+    ],
+  },
+  {
+    label: 'Resources',
+    children: [
+      {
+        label: 'Study Notes & Cheatsheets',
+        subLabel: 'My Study Notes and Summary',
+        href: '#',
+      },
+    ],
+  },
+  {
+    label: 'Contact me',
     href: '#',
   },
 ]
