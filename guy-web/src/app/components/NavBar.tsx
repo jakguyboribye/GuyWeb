@@ -161,7 +161,7 @@ const MobileNav = () => {
 
 const MobileNavItem = ({ label, children, href }: NavItem) => {
   const { isOpen, onToggle } = useDisclosure()
-
+  const subtextcolor = useColorModeValue('white', 'gray.500')
   return (
     <Stack spacing={2} onClick={children && onToggle}>
       <Box
@@ -197,7 +197,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
           align={'start'}>
           {children &&
             children.map((child) => (
-              <Box as="a" key={child.label} py={2} href={child.href} color = {useColorModeValue('white', 'gray.500')}>
+              <Box as="a" key={child.label} py={2} href={child.href} color={subtextcolor}>
                 {child.label}
               </Box>
             ))}
