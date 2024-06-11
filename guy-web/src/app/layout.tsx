@@ -18,7 +18,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <head>
+      {/* heads empty :) */}
+      </head>
+      <body className=" bg-black">
       <ChakraProvider>
       <NavBar />
       <div className={inter.className}>{children}</div>
