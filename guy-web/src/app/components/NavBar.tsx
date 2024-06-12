@@ -51,7 +51,7 @@ export default function WithSubnavigation() {
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-          <Image borderRadius='10' src='https://www.mashed.com/img/gallery/the-kermit-lipton-tea-meme-explained/l-intro-1634237597.jpg' boxSize='30px' className='mr-20'></Image>
+        <img src="https://media3.giphy.com/media/xUPGcpMkPDfVUbZg52/giphy.gif?cid=6c09b952qbmnktikk2drf4rhqrxbdeu5421f8d7f3jsnv7fx&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" alt="" className=" w-[2%] h-[2%]"/>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
             <DesktopNav />
