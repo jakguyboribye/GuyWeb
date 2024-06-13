@@ -48,6 +48,8 @@ export default function WithSubnavigation() {
             icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
             variant={'ghost'}
             aria-label={'Toggle Navigation'}
+            color={useColorModeValue('white', 'white')} // Add this line
+            _hover={{ color: useColorModeValue('gray.500', 'gray.300') }} // Add this line
           />
         </Flex>
         <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
@@ -72,7 +74,7 @@ const DesktopNav = () => {
   const popoverContentBgColor = useColorModeValue('black', 'gray.800')
 
   return (
-    <Stack direction={'row'} spacing={28}>
+    <Stack direction={'row'} spacing={40}>
       {NAV_ITEMS.map((navItem) => (
         <Box key={navItem.label}>
           <Popover trigger={'hover'} placement={'bottom-start'}>
