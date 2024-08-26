@@ -12,7 +12,7 @@ export default function Home() {
       </section>
       <section className=" bg-black p-10 w-full h-auto flex-row">
         <div className="w-full flex">
-          <img src="https://mrwallpaper.com/images/hd/the-iconic-friendly-face-of-kermit-the-frog-jo8at50q5d6se8j3.jpg" alt="" className="w-1/4"/>
+          <iframe className="border-radius:12px" src="https://open.spotify.com/embed/track/3Y2S5izRYLPf0Bfb4HNJ2U?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
         </div>
       </section>
       <section className="bg-white w-full h-auto py-10 text-center">
