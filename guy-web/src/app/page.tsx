@@ -3,13 +3,6 @@ import LinkBoxes from "./components/LinkBoxes";
 export default function Home() {
   return (
     <main>
-<section className="relative w-full h-64 md:h-1/4 overflow-hidden">
-  <img src="homebanner2.jpeg" alt="" className="block w-full h-full object-cover opacity-60" />
-  <div className="absolute inset-0 flex flex-col justify-center items-start p-4 md:ml-[5%]">
-    {/* Content inside */}
-  </div>
-</section>
-
 <section className="bg-black p-4 md:p-10 w-full h-auto flex flex-col md:flex-row" style={{
   backgroundImage: "url('bg.png')", 
   backgroundSize: "cover",
