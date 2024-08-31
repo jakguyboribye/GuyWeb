@@ -3,18 +3,29 @@ import LinkBoxes from "./components/LinkBoxes";
 export default function Home() {
   return (
     <main>
-      <section className="relative w-full h-1/4 overflow-hidden">
-        <img src="homebanner1.jpeg" alt="" className="block w-full h-auto opacity-60" />
-        <div className="absolute inset-0 flex flex-col justify-center items-left ml-[5%]">
-          <p className="text-white text-2xl sm:text-4xl md:text-4xl lg:text-6xl font-bold my-[1%] font-title" id="fadein">Hello There !</p>
-          <p className="text-white text-1xl sm:text-2xl md:text-2xl lg:text-4xl font-bold my-[1%] font-title" id="fadein">Welcome to my website</p>
-        </div>
-      </section>
-      <section className=" bg-black p-10 w-full h-auto flex-row">
-        <div className="w-full flex">
-          <iframe className="border-radius:12px" src="https://open.spotify.com/embed/track/3Y2S5izRYLPf0Bfb4HNJ2U?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-      </section>
+<section className="bg-black p-4 md:p-10 w-full h-auto flex flex-col md:flex-row" style={{
+  backgroundImage: "url('bg.png')", 
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat"
+}}>
+  <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 py-8 md:py-11">
+    <div className="w-full md:w-[46%] block justify-center items-center backdrop-filter rounded-[30px] shadow-lg p-4 md:p-6">
+      <h1 className="text-white text-xl sm:text-2xl md:text-2xl lg:text-4xl font-bold my-2 md:my-4 font-title">Hi I'm</h1>
+      <h1 className="text-blue-600 text-xl sm:text-2xl md:text-2xl lg:text-6xl font-bold my-2 md:my-4 font-title" id="fadein">Jakguy Boriboon</h1>
+      <p className="text-white mt-4 md:mt-8">
+        👋 Hello! I'm Jakguy Boriboon, a student and developer at the Faculty of Information and Communication Technology at Mahidol University🧑‍💻 . <br /><br />
+        I'm currently pursuing a degree in Computer Science, I'm passionate about all things tech and enjoy diving deep into programming-related subjects and discussions. <br /><br />
+        This website is my hobby project to express my interests and growth🤓. 
+      </p>
+      <iframe className="w-full md:w-[80%] h-[20%] md:h-[20%] mt-4 md:mt-10" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator" width="100%" height="100%" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    <div className="w-full md:w-[30%] block justify-center items-center backdrop-filter rounded-[30px] shadow-lg p-4">
+      <img src="me2.jpg" alt="" className="w-full h-auto" />
+    </div>
+  </div>
+</section>
+
       <section className="bg-white w-full h-auto py-10 text-center">
         <h1 className=" text-5xl font-bold pb-12">My Contacts</h1>
         <div className="flex flex-wrap w-full justify-center">
@@ -65,7 +76,7 @@ export default function Home() {
             title="CV"
             description="my curriculum vitae"
             link="#" />
-          
+
         </div>
       </section>
 
