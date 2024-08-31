@@ -11,14 +11,14 @@ export default function Home() {
 }}>
   <div className="w-full flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8 py-8 md:py-11">
     <div className="w-full md:w-[46%] block justify-center items-center backdrop-filter rounded-[30px] shadow-lg p-4 md:p-6">
-      <h1 className="text-white text-xl sm:text-2xl md:text-2xl lg:text-4xl font-bold my-2 md:my-4 font-title">Hi I'm</h1>
+      <h1 className="text-white text-xl sm:text-2xl md:text-2xl lg:text-4xl font-bold my-2 md:my-4 font-title">Hi I&apos;m</h1>
       <h1 className="text-blue-600 text-xl sm:text-2xl md:text-2xl lg:text-6xl font-bold my-2 md:my-4 font-title" id="fadein">Jakguy Boriboon</h1>
       <p className="text-white mt-4 md:mt-8">
-        👋 Hello! I'm Jakguy Boriboon, a student and developer at the Faculty of Information and Communication Technology at Mahidol University🧑‍💻 . <br /><br />
-        I'm currently pursuing a degree in Computer Science, I'm passionate about all things tech and enjoy diving deep into programming-related subjects and discussions. <br /><br />
+        👋 Hello! I&apos;m Jakguy Boriboon, a student and developer at the Faculty of Information and Communication Technology at Mahidol University🧑‍💻 . <br /><br />
+        I&apos;m currently pursuing a degree in Computer Science, I&apos;m passionate about all things tech and enjoy diving deep into programming-related subjects and discussions. <br /><br />
         This website is my hobby project to express my interests and growth🤓. 
       </p>
-      <iframe className="w-full md:w-[80%] h-[20%] md:h-[20%] mt-4 md:mt-10" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator" width="100%" height="100%" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe className="w-full md:w-[80%] h-[20%] md:h-[20%] mt-4 md:mt-10" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator" width="100%" height="100%" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
     <div className="w-full md:w-[30%] block justify-center items-center backdrop-filter rounded-[30px] shadow-lg p-4">
       <img src="me2.jpg" alt="" className="w-full h-auto" />
