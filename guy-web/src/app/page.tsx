@@ -16,7 +16,7 @@ export default function Home() {
       <p className="text-white mt-4 md:mt-8">
         👋 Hello! I&apos;m Jakguy Boriboon, a student and developer at the Faculty of Information and Communication Technology at Mahidol University🧑‍💻 . <br /><br />
         I&apos;m currently pursuing a degree in Computer Science, I&apos;m passionate about all things tech and enjoy diving deep into programming-related subjects and discussions. <br /><br />
-        This website is my hobby project to express my interests and growth🤓. 
+        This website is my hobby project to express my interests and growth🤓🤓🤓. 
       </p>
       <iframe className="w-full md:w-[80%] h-[20%] md:h-[20%] mt-4 md:mt-10" src="https://open.spotify.com/embed/track/6dOtVTDdiauQNBQEDOtlAB?utm_source=generator" width="100%" height="100%" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
